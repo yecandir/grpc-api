@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option go_package = "github.com/YorumAPI/grpc-api/reviews";
+
+package reviews;
+
+service Review {
+  rpc Create (CreateRequest) returns (CreateResponse) {}
+}
+
+// The request message containing the user's name.
+message CreateRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message CreateResponse {
+  string message = 1;
+}
