@@ -1,4 +1,4 @@
-module example.com/greetings
+module github.com/yecandir/grpc-api
 
 go 1.20
 
